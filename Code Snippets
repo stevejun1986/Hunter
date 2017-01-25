@@ -105,7 +105,9 @@ if __name__=='__main__':
     print '%s' % sys.exc_type
     print 'shutting down'
     print '%d packets received, %d packets dropped, %d packets dropped by interface' % p.stats()
-"""    
+"""
+# This section was pulled from the code above. It appears this section will decode the binary output from reading the pcap file.
+# Although a portion of the following is dependant on a fuction from above.
 """
 def print_packet(pktlen, data, timestamp):
   if not data:
