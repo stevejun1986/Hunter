@@ -1,12 +1,12 @@
-from python_arptable import get_arp_table
-import pcapng
+from arptable import get_arp_table
+from pcapng import FileScanner
 import sys
 from __future__ import print_function
 from time import sleep
 import string
 import struct
 
-a = get_arp_table()
+a = get_apt_table()
 
 print(a)
 
